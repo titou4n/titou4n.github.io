@@ -1,3 +1,3 @@
 # titou4n.github.io
 
-open index.html
+open templates\index.html
