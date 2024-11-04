@@ -1,0 +1,186 @@
+:root {
+    --background-color: #f9f4ef;       /* Beige doux pour le fond */
+    --primary-color: #333333;          /* Noir pour le texte principal */
+    --accent-color: #8b5e34;           /* Marron clair pour les titres */
+    --text-color: #4a4a4a;             /* Gris foncé pour le texte */
+    --highlight-color: #d4a373;        /* Beige foncé pour les accents */
+    --header-background: #1f2d3a;      /* Bleu-gris pour l'en-tête */
+    --card-background: #ffffff;        /* Blanc pour les sections */
+    --avatar-border: #e0d7c5;          /* Beige clair pour l'avatar */
+    --shadow-color: rgba(0, 0, 0, 0.1);/* Ombre subtile */
+    --transition-time: 0.3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+.header-container {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--header-background);
+    color: var(--card-background);
+}
+
+.header-container h1 {
+    font-size: 2.5em;
+    color: var(--highlight-color);
+}
+
+.header-container h2 {
+    font-size: 1.4em;
+    font-weight: 400;
+    color: var(--accent-color);
+}
+
+.header-container .avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid var(--avatar-border);
+    object-fit: cover;
+    transition: transform var(--transition-time) ease;
+    margin-bottom: 20px;
+}
+
+.header-container .avatar:hover {
+    transform: scale(1.05);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    background-color: var(--header-background);
+}
+
+.menu li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.menu a {
+    color: var(--card-background);
+    text-decoration: none;
+    font-size: 1em;
+    transition: color var(--transition-time);
+}
+
+.menu a:hover {
+    color: var(--highlight-color);
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: var(--card-background);
+    box-shadow: 0px 4px 12px var(--shadow-color);
+    border-radius: 8px;
+}
+
+h3 {
+    font-size: 1.6em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    border-left: 4px solid var(--highlight-color);
+    padding-left: 10px;
+}
+
+p {
+    margin: 20px 0;
+}
+
+/* Styles pour les projets */
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.project-item {
+    padding: 20px;
+    background-color: var(--card-background);
+    border: 1px solid var(--avatar-border);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px var(--shadow-color);
+    transition: transform var(--transition-time), box-shadow var(--transition-time);
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px var(--shadow-color);
+}
+
+.project-item h4 {
+    font-size: 1.2em;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: var(--highlight-color);
+    color: var(--card-background);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color var(--transition-time);
+}
+
+.button:hover {
+    background-color: var(--accent-color);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-color);
+    font-size: 0.9em;
+    background-color: var(--background-color);
+}
+
+
+
+
+
+.contact-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--highlight-color);
+    color: var(--card-background);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color var(--transition-time);
+}
+
+.button i {
+    margin-right: 8px; /* Espace entre l'icône et le texte */
+}
+
+.button:hover {
+    background-color: var(--accent-color);
+}
