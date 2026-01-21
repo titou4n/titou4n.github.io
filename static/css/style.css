@@ -101,7 +101,54 @@ p {
     margin: 20px 0;
 }
 
+
+
+/*About*/
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.about-item {
+    padding: 20px;
+    background-color: var(--card-background);
+    border: 1px solid var(--avatar-border);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px var(--shadow-color);
+    transition: transform var(--transition-time), box-shadow var(--transition-time);
+}
+
+.about-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px var(--shadow-color);
+}
+
+/*Skill*/
+
+.skill-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.skill-item {
+    padding: 20px;
+    background-color: var(--card-background);
+    border: 1px solid var(--avatar-border);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px var(--shadow-color);
+    transition: transform var(--transition-time), box-shadow var(--transition-time);
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px var(--shadow-color);
+}
+
 /* Styles pour les projets */
+
 .projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -122,11 +169,7 @@ p {
     box-shadow: 0px 8px 16px var(--shadow-color);
 }
 
-.project-item h4 {
-    font-size: 1.2em;
-    color: var(--accent-color);
-    margin-bottom: 10px;
-}
+/*BUTTON*/
 
 .button {
     padding: 10px 20px;

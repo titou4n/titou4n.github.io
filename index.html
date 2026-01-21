@@ -12,13 +12,13 @@
 
     <!-- En-tête -->
     <header>
+
         <div class="header-container">
-            <!-- <img src="..\static\IMG\avatar.jpg" alt="Photo de Titouan" class="avatar"> -->
             <img src="..\static\IMG\avatar.jpg" alt="Photo de Titouan" class="avatar">
             <h1>Titouan SIMON</h1>
            <h2>Étudiant à l'EPITA</h2>
-           <p>Passionné d'informatique et de développement</p>
         </div>
+
         <nav>
             <ul class="menu">
                 <li><a href="#about">À Propos</a></li>
@@ -28,6 +28,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main class="container">
@@ -35,65 +36,151 @@
         <!-- Section À Propos -->
         <section id="about" class="box">
             <h3>À Propos de Moi</h3>
-            <p>Je suis Titouan SIMON, étudiant à l’EPITA et passionné d'informatique depuis mes années de lycée, où j'ai découvert les bases de la programmation lors des ateliers organisés par Magic Makers.
-                Depuis, ma curiosité et mon envie d'apprendre m'ont permis de développer des compétences diversifiées, ainsi qu'un sens aiguisé de la rigueur et de la créativité.
-                Je me distingue par mon esprit d’analyse, ma curiosité et mon dynamisme, et j'apprécie particulièrement la gestion de projets.</p>
+            <p>Bonjour, Je suis Titouan SIMON, étudiant à l’EPITA. Je suis passionné d'informatique depuis mes années de lycée, où j'ai découvert les bases de la programmation lors des ateliers organisés par Magic Makers.
+                Depuis, ma curiosité et mon envie d'apprendre l'informatique m'ont permis de développer des compétences diversifiées.
+            </p>
+
+            <br>
+            <h3>Si je devais me resumer en 3 points :</h3>
+            <br>
+            <div class="about-container">
+
+                <div class="about-item">
+                    <h3>L'informatique et EPITA</h3>
+                    <p>Un site web utilisant Flask et intégrant une gestion de bases de données.</p>
+                </div>
+
+                <div class="about-item">
+                    <h3>Le secourisme avec la Protection Civile</h3>
+                    <p>J'ai intégré la Protection Civile Paris Seine ou PCPS depuis mai 2025.</p>
+                </div>
+
+                <div class="about-item">
+                    <h3>Le triathlon avec le PSC</h3>
+                    <p>Je pratique du triathlon en club (Paris Sport Club) et en competition depuis mon lycée</p>
+                </div>
+            </div>        
         </section>
 
         <!-- Section Compétences -->
         <section id="skills" class="box">
-            <h3>Compétences et Points Forts</h3>
-            <p>
-                Langages de programmation : C#, Python et Caml
-                <br>Développement Web : HTML/CSS
-                <br>Développement de jeux vidéo : Unity
-            </p>
+            <br>
+            <br>
+            <h3>Diplôme et Compétences</h3>
+            <br>
+            <h2>Compétences en Informatique</h2>
+            <br>
+            <div class="skill-container">
+
+                <div class="skill-item">
+                    <h4>Langages de programmation et développement Web</h4>
+                    <p>C, C#, Python, OCaml</p>
+                    <p>HTML, CSS</p>
+                </div>
+
+                <div class="skill-item">
+                    <h4>Outils et Editeurs/IDE</h4>
+                    <p>Git, GitHub, Docker, Unity</p>
+                    <p>VsCode, Rider, Vim</p>
+                </div>
+            </div>
+
+            <br>
+            <h2>Compétences en Secourisme</h2>
+            <br>
+
+            <div class="skill-container">
+                <div class="skill-item">
+                    <h3>PSE1 + PSE2</h3>
+                    <p>Premiers secours en équipe de niveau 1 et niveau 2.</p>
+                    <p>Maîtrise des gestes de premiers secours, capacité à intervenir sur des situations d’urgences</p>
+                </div>
+
+                <div class="skill-item">
+                    <h3>BNSSA</h3>
+                    <p>Brevet National de Sécurité et de Sauvetage Aquatique</p>
+                </div>
+            </div>
         </section>
 
+        <br>
         <!-- Section Expérience -->
         <section id="experience" class="box">
-            <h3>Expérience</h3>
-            <p>
-                Grâce à mes projets personnels et collaboratifs, j'ai pu approfondir mes compétences en développement informatique et enrichir ma culture technique. Ces expériences m'ont permis de découvrir plusieurs domaines de l'informatique, et d'affiner mon approche du développement et de la gestion de projets.
-            </p>
+
+            <div class="experience-item">
+                <br>
+                <h3>Expérience</h3>
+                <br>
+                <p>
+                    Grâce à mes projets personnels et collaboratifs, j'ai pu approfondir mes compétences en développement informatique et enrichir ma culture technique. Ces expériences m'ont permis de découvrir plusieurs domaines de l'informatique, et d'affiner mon approche du développement et de la gestion de projets.
+                </p>
+            </div>
+            
         </section>
 
         <!-- Section Projets -->
         <section id="projects" class="box">
+            <br>
             <h3>Projets</h3>
+            <br>
             <div class="projects-container">
+
                 <div class="project-item">
                     <h4>TitouService</h4>
-                    <p>Un site web utilisant Flask et intégrant une gestion de bases de données.</p>
-                    <a href="https://github.com/titou4n/TService" target="_blank" class="button">Voir sur GitHub</a>
+                    <p>TitouService est une application web développée avec Flask, déployée via Docker, et servie par Nginx en tant que reverse proxy. </p>
+                    <table>
+                        <tr>
+                            <td><a href="https://github.com/titou4n/titouservice" class="button">Voir sur GitHub</a></td>
+                            <td><a href="https://titouservice.ltjs.net" class="button">Voir le site</a></td>
+                        </tr>
+                    </table>
                 </div>
+
+                <div class="project-item">
+                    <h4>Olympus Tribute</h4>
+                    <p>Olympus Tribute est un jeu de gestion de ressources, d'espace et de stratégie en 3D, se d'eroulant dans un univers inspiré de la Grèce antique.</p>
+                    <table>
+                        <tr>
+                            <td><a href="https://github.com/Olympus-Tribute/OlympusTributeUnity" class="button">Voir sur GitHub</a></td>
+                            <td><a href="https://olympus-tribute.github.io/" class="button">Voir le Jeu</a></td>
+                        </tr>
+                    </table>
+                </div>
+
                 <div class="project-item">
                     <h4>HashDecode</h4>
-                    <p>Un programme pour la décryptographie de hashes, développé avec Hashcat.</p>
-                    <a href="https://github.com/ton-github/second-project" target="_blank" class="button">Voir sur GitHub</a>
+                    <p>Un programme qui crack les hashes, développé avec Hashcat.</p>
+                    <a href="https://github.com/titou4n/CrackHash" class="button">Voir sur GitHub</a>
                 </div>
+
                 <div class="project-item">
                     <h4>Librairie SQL</h4>
                     <p>Gestion du stock d'une librairie, utilisation de SQL</p>
-                    <a href="https://github.com/titou4n/NSI_Projet_1_Librairie" target="_blank" class="button">Voir sur GitHub</a>
+                    <a href="https://github.com/titou4n/NSI_Projet_1_Librairie" class="button">Voir sur GitHub</a>
                 </div>
+
                 <div class="project-item">
                     <h4>Problème du "Voyageur de commerce"</h4>
                     <p>Cas d'étude concret qui permet d'appliquer de nombreuses compétences algorithmiques</p>
-                    <a href="https://github.com/titou4n/NSI_Projet_2_Voyageur_de_Commerce" target="_blank" class="button">Voir sur GitHub</a>
+                    <a href="https://github.com/titou4n/NSI_Projet_2_Voyageur_de_Commerce" class="button">Voir sur GitHub</a>
                 </div>
+
                 <div class="project-item">
                     <h4>Autre Projet</h4>
-                    <p>Projet Additionnel</p>
-                    <a href="https://github.com/titou4n" target="_blank" class="button">Voir sur GitHub</a>
+                    <p>Projets Additionnels - Pour tous les autres petit projets non mis sur cette page</p>
+                    <a href="https://github.com/titou4n" class="button">Voir sur GitHub</a>
                 </div>
+
             </div>
         </section>
+
         <br>
+        <br>
+
         <!-- Section Contact -->
         <section id="contact" class="box">
             <h3>Contact</h3>
-            <p>Pour toute demande, veuillez me contacter via l’un des canaux suivants :</p>
+            <p>Pour toute demande ou question, n'hésitez pas à me contacter via l’un des canaux suivants, Merci :</p>
             <div class="contact-options">
                 <a href="https://www.linkedin.com/in/titouan-simon-14b6b2343" target="_blank" class="button">
                     <i class="fab fa-linkedin"></i> LinkedIn
@@ -111,8 +198,10 @@
         </section>
 
     </main>
+
     <footer>
         <p>&copy; Titouan SIMON - Tous droits réservés</p>
     </footer>
+
 </body>
 </html>
